@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-func apiFetch<T: Decodable>(_ url: String, completion: @escaping ([T]) -> Void) {
+func apiFetch<T: Decodable>(_ url: String, completion: @escaping (T) -> Void) {
     guard let url = URL(string: url) else { return }
 
     URLSession.shared.dataTask(with: url) { (data, response, error) in
         guard let data = data else { return }
         let decoder: JSONDecoder = JSONDecoder()
         do {
-            let resData = try decoder.decode([T].self, from: data)
+            let resData = try decoder.decode(T.self, from: data)
             DispatchQueue.main.async {
                 completion(resData)
             }

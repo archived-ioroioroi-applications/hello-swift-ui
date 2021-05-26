@@ -22,6 +22,10 @@ struct HelloTabView : View {
                 .font(.title)
                 .tabItem{Image("list")}
                 .tag(1)
+            ContentView3()
+                .font(.title)
+                .tabItem{Text("mypage")}
+                .tag(2)
         }
     }
 }

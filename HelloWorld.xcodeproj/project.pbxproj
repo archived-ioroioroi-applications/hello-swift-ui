@@ -17,6 +17,8 @@
 		72FED383265CFB5F00694EDE /* ApiFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED382265CFB5F00694EDE /* ApiFetch.swift */; };
 		72FED385265CFCB700694EDE /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED384265CFCB700694EDE /* ContentView2.swift */; };
 		72FED387265CFDA000694EDE /* D1v1bApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED386265CFDA000694EDE /* D1v1bApiModel.swift */; };
+		72FED389265D378400694EDE /* ContentView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED388265D378400694EDE /* ContentView3.swift */; };
+		72FED38B265D40CB00694EDE /* ITunesApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED38A265D40CB00694EDE /* ITunesApiModel.swift */; };
 		7BBA366CC13A14E061BFF87D /* Pods_HelloWorld_HelloWorldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FC67F1BAC99DD4091890A0 /* Pods_HelloWorld_HelloWorldUITests.framework */; };
 		BC6E0C8DF3ECF10B0A77D6B1 /* Pods_HelloWorldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF0F1DD89DB1740F39A665B /* Pods_HelloWorldTests.framework */; };
 		FD2E2B53C4D6FA1AD2E92860 /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B283FDAD883D9876D62F87 /* Pods_HelloWorld.framework */; };
@@ -59,6 +61,8 @@
 		72FED382265CFB5F00694EDE /* ApiFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFetch.swift; sourceTree = "<group>"; };
 		72FED384265CFCB700694EDE /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		72FED386265CFDA000694EDE /* D1v1bApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1v1bApiModel.swift; sourceTree = "<group>"; };
+		72FED388265D378400694EDE /* ContentView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView3.swift; sourceTree = "<group>"; };
+		72FED38A265D40CB00694EDE /* ITunesApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesApiModel.swift; sourceTree = "<group>"; };
 		8A4764ED3C9945400465FE48 /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB44DEBA0507C6D3C16D112 /* Pods-HelloWorld-HelloWorldUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld-HelloWorldUITests.release.xcconfig"; path = "Target Support Files/Pods-HelloWorld-HelloWorldUITests/Pods-HelloWorld-HelloWorldUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A3B283FDAD883D9876D62F87 /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +128,7 @@
 				728B8ED4265A97EB00CAFC8F /* HelloWorldApp.swift */,
 				728B8ED8265A97ED00CAFC8F /* Assets.xcassets */,
 				728B8EDA265A97ED00CAFC8F /* Preview Content */,
-				72FED37D265CED0000694EDE /* Util */,
+				72FED37D265CED0000694EDE /* Api */,
 				728B8EFF265B3F1000CAFC8F /* View */,
 			);
 			path = HelloWorld;
@@ -159,6 +163,7 @@
 		728B8EFF265B3F1000CAFC8F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				72FED388265D378400694EDE /* ContentView3.swift */,
 				728B8ED6265A97EB00CAFC8F /* ContentView.swift */,
 				72FED384265CFCB700694EDE /* ContentView2.swift */,
 				72FED380265CF69000694EDE /* HelloTabView.swift */,
@@ -166,13 +171,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		72FED37D265CED0000694EDE /* Util */ = {
+		72FED37D265CED0000694EDE /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				72FED38A265D40CB00694EDE /* ITunesApiModel.swift */,
 				72FED382265CFB5F00694EDE /* ApiFetch.swift */,
 				72FED386265CFDA000694EDE /* D1v1bApiModel.swift */,
 			);
-			path = Util;
+			path = Api;
 			sourceTree = "<group>";
 		};
 		7B5528585E231A7C43B7D29A /* Frameworks */ = {
@@ -401,6 +407,8 @@
 			files = (
 				728B8ED7265A97EB00CAFC8F /* ContentView.swift in Sources */,
 				72FED383265CFB5F00694EDE /* ApiFetch.swift in Sources */,
+				72FED38B265D40CB00694EDE /* ITunesApiModel.swift in Sources */,
+				72FED389265D378400694EDE /* ContentView3.swift in Sources */,
 				728B8ED5265A97EB00CAFC8F /* HelloWorldApp.swift in Sources */,
 				72FED387265CFDA000694EDE /* D1v1bApiModel.swift in Sources */,
 				72FED385265CFCB700694EDE /* ContentView2.swift in Sources */,
