@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		72FED387265CFDA000694EDE /* D1v1bApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED386265CFDA000694EDE /* D1v1bApiModel.swift */; };
 		72FED389265D378400694EDE /* ContentView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED388265D378400694EDE /* ContentView3.swift */; };
 		72FED38B265D40CB00694EDE /* ITunesApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED38A265D40CB00694EDE /* ITunesApiModel.swift */; };
+		72FED38D265E8E7600694EDE /* ContentView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED38C265E8E7600694EDE /* ContentView4.swift */; };
+		72FED390265E9BFC00694EDE /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED38F265E9BFC00694EDE /* Realm.swift */; };
 		7BBA366CC13A14E061BFF87D /* Pods_HelloWorld_HelloWorldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FC67F1BAC99DD4091890A0 /* Pods_HelloWorld_HelloWorldUITests.framework */; };
 		BC6E0C8DF3ECF10B0A77D6B1 /* Pods_HelloWorldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF0F1DD89DB1740F39A665B /* Pods_HelloWorldTests.framework */; };
 		FD2E2B53C4D6FA1AD2E92860 /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B283FDAD883D9876D62F87 /* Pods_HelloWorld.framework */; };
@@ -63,6 +65,8 @@
 		72FED386265CFDA000694EDE /* D1v1bApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1v1bApiModel.swift; sourceTree = "<group>"; };
 		72FED388265D378400694EDE /* ContentView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView3.swift; sourceTree = "<group>"; };
 		72FED38A265D40CB00694EDE /* ITunesApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesApiModel.swift; sourceTree = "<group>"; };
+		72FED38C265E8E7600694EDE /* ContentView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView4.swift; sourceTree = "<group>"; };
+		72FED38F265E9BFC00694EDE /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		8A4764ED3C9945400465FE48 /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB44DEBA0507C6D3C16D112 /* Pods-HelloWorld-HelloWorldUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld-HelloWorldUITests.release.xcconfig"; path = "Target Support Files/Pods-HelloWorld-HelloWorldUITests/Pods-HelloWorld-HelloWorldUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A3B283FDAD883D9876D62F87 /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +128,7 @@
 		728B8ED3265A97EB00CAFC8F /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				72FED38E265E9BCC00694EDE /* Db */,
 				728B8EDD265A97ED00CAFC8F /* Info.plist */,
 				728B8ED4265A97EB00CAFC8F /* HelloWorldApp.swift */,
 				728B8ED8265A97ED00CAFC8F /* Assets.xcassets */,
@@ -167,6 +172,7 @@
 				728B8ED6265A97EB00CAFC8F /* ContentView.swift */,
 				72FED384265CFCB700694EDE /* ContentView2.swift */,
 				72FED380265CF69000694EDE /* HelloTabView.swift */,
+				72FED38C265E8E7600694EDE /* ContentView4.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +185,14 @@
 				72FED386265CFDA000694EDE /* D1v1bApiModel.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		72FED38E265E9BCC00694EDE /* Db */ = {
+			isa = PBXGroup;
+			children = (
+				72FED38F265E9BFC00694EDE /* Realm.swift */,
+			);
+			path = Db;
 			sourceTree = "<group>";
 		};
 		7B5528585E231A7C43B7D29A /* Frameworks */ = {
@@ -215,6 +229,7 @@
 				728B8ECD265A97EB00CAFC8F /* Sources */,
 				728B8ECE265A97EB00CAFC8F /* Frameworks */,
 				728B8ECF265A97EB00CAFC8F /* Resources */,
+				0C68946CD26AAB1D0D9484B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +267,7 @@
 				728B8EE9265A97ED00CAFC8F /* Sources */,
 				728B8EEA265A97ED00CAFC8F /* Frameworks */,
 				728B8EEB265A97ED00CAFC8F /* Resources */,
+				1C248C71EA1B41751FCE6071 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -332,6 +348,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C68946CD26AAB1D0D9484B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C248C71EA1B41751FCE6071 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld-HelloWorldUITests/Pods-HelloWorld-HelloWorldUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld-HelloWorldUITests/Pods-HelloWorld-HelloWorldUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorld-HelloWorldUITests/Pods-HelloWorld-HelloWorldUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		48138C684E4653AC7DA02DD3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -410,7 +460,9 @@
 				72FED38B265D40CB00694EDE /* ITunesApiModel.swift in Sources */,
 				72FED389265D378400694EDE /* ContentView3.swift in Sources */,
 				728B8ED5265A97EB00CAFC8F /* HelloWorldApp.swift in Sources */,
+				72FED390265E9BFC00694EDE /* Realm.swift in Sources */,
 				72FED387265CFDA000694EDE /* D1v1bApiModel.swift in Sources */,
+				72FED38D265E8E7600694EDE /* ContentView4.swift in Sources */,
 				72FED385265CFCB700694EDE /* ContentView2.swift in Sources */,
 				72FED381265CF69000694EDE /* HelloTabView.swift in Sources */,
 			);

@@ -20,12 +20,18 @@ struct HelloTabView : View {
                 .tag(0)
             ContentView2()
                 .font(.title)
-                .tabItem{Image("list")}
+                .tabItem{Image("list")
+                    Text("list")}
                 .tag(1)
             ContentView3()
                 .font(.title)
                 .tabItem{Text("mypage")}
                 .tag(2)
+            ContentView4()
+                .font(.title)
+                .tabItem{Text("donate")}
+                .tag(3)
+
         }
     }
 }
