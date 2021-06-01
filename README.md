@@ -10,6 +10,16 @@ $ bundle exec pod install
 // and Run in Xcode
 ```
 
+### flask-mongodb-graphene (for GraphQL)
+GraphQLお試しのための超軽量GraphQlサーバ
+
+```sh
+$ cd flask-mongodb-graphene 
+$ docker-compose up -d
+$ docker-compose exec flask python database.py
+$ docker-compose exec flask python app.py
+```
+
 ### with apollo (for GraphQL)
 
 ```sh

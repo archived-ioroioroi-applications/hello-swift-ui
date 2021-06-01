@@ -1,0 +1,13 @@
+
+regex
+mongoengine
+jsonpath
+flask
+flask-graphql
+graphene
+graphene-mongo
+lxml
+pandas
+requests
+cssselect
+dnspython

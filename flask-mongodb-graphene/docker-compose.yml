@@ -1,0 +1,73 @@
+version: "3"
+services:
+  flask:
+    build: './PythonAPI'
+    ports:
+      - "15002:5002"
+    networks: #dev切り替え用
+      - my-network
+      - default
+    volumes:
+      - ./app:/app
+    tty: true
+    environment:
+      FLASK_APP: app.py
+      FLASK_ENV: development
+      FLASK_DEBUG: 1  # Debug / Hot Reload Mode ON
+      TZ: Asia/Tokyo
+      MONGO_USER: mongo           # ./app/mongo/docker-entrypoint-initdb.d/createUser.js の user と合わせること
+      MONGO_PASSWORD: mongo   # ./app/mongo/docker-entrypoint-initdb.d/createUser.js の pwd と合わせること
+      MONGO_HOST: mongo
+      MONGO_DATABASE: flask-graphql   # ./app/mongo/docker-entrypoint-initdb.d/createUser.js の db と合わせること
+    # command: flask run -h 0.0.0.0
+
+  mongo:
+    image: mongo
+    networks: #dev切り替え用
+      - my-network
+      - default
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: mymongopass
+      MONGO_INITDB_DATABASE: flask-graphql  # ./app/mongo/docker-entrypoint-initdb.d/createUser.js の db と合わせること
+    volumes:
+      - ./mongo/data:/data/db
+      - ./mongo/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    command: ["mongod", "--auth"]
+
+  dbgate:
+    image: dbgate/dbgate
+    networks: #dev切り替え用
+      - my-network
+      - default
+    ports:
+      - 80:3000
+    environment:
+      CONNECTIONS: con1
+      # CONNECTIONS: con1,con2
+
+      LABEL_con1: MongoDB
+      SERVER_con1: mongo
+      USER_con1: root
+      PASSWORD_con1: mymongopass
+      PORT_con1: 27017
+      ENGINE_con1: mongo@dbgate-plugin-mongo
+
+      # LABEL_con1: MySql
+      # SERVER_con1: mysql
+      # USER_con1: root
+      # PASSWORD_con1: TEST
+      # PORT_con1: 3306
+      # ENGINE_con1: mysql@dbgate-plugin-mysql
+
+      # LABEL_con2: Postgres
+      # SERVER_con2: postgres
+      # USER_con2: postgres
+      # PASSWORD_con2: TEST
+      # PORT_con2: 5432
+      # ENGINE_con2: postgres@dbgate-plugin-postgres
+networks:
+  my-network:
+    external: true
