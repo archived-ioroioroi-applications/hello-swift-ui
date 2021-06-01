@@ -31,6 +31,10 @@ struct HelloTabView : View {
                 .font(.title)
                 .tabItem{Text("donate")}
                 .tag(3)
+            ContentView5()
+                .font(.title)
+                .tabItem{Text("graph")}
+                .tag(4)
 
         }
     }

@@ -6,6 +6,7 @@ target 'HelloWorld' do
   use_frameworks!
 
   pod 'RealmSwift'
+  pod 'Apollo'
 
   # Pods for HelloWorld
 

@@ -1,0 +1,23 @@
+{
+  "name": "HelloSwift",
+  "version": "0.0.1",
+  "description": "A Swift Framework app",
+  "productName": "HelloSwift",
+  "author": "ioroioroi",
+  "private": true,
+  "scripts": {
+    "build:pwa": "quasar build -m pwa"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ]
+}

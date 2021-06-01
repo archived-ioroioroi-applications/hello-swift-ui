@@ -1,6 +1,8 @@
 //
 //  ContentView4.swift
 //  https://docs.mongodb.com/realm-legacy/docs/swift/latest/index.html
+//  https://yuyuyu-331.hatenablog.com/entry/2020/11/07/025401
+//  https://frog9.com/posts/19
 //
 //  Created by 五百蔵和也 on 2021/05/27.
 //
