@@ -36,3 +36,25 @@ $ docker-compose exec node apollo codegen:generate ./HelloWorld/Graphql/HelloGra
 * HTTPでなくWebSocketで繋ぐ例 : <https://github.com/Kaww/SpaceXplorer/blob/f765c949bf304748e84d08dd6b6dc5f650df45dd/SpaceXplorer/Sources/Apollo/Network.swift>
 
 * 参考: <https://blog.spacemarket.com/code/graphql-on-swift-by-apollo-ios/> <https://www.back4app.com/docs/ios/graphql/swift-graphql>
+
+## Contents
+
+### ContentView
+
+URLSessionを用いたAPIコールサンプル
+
+### ContentView2
+
+URLSessionをsingletonで実装したAPIコールサンプル
+
+### ContentView3
+
+画面からパラメータを渡してAPIコールするサンプル
+
+### ContentView4
+
+Realmを使用しで内部DBにデータ永続化を可能にしたInsert/Deleteサンプル
+
+### ContentView5
+
+Swift-Apollo を使用したGraphQLサンプル (サーバサイドは flask-mongodb-graphene にて実装)
