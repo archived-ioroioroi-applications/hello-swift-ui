@@ -1,4 +1,4 @@
-query SampleQuery {
+query Poweups {
   allPowerups{
     edges{
       node{

@@ -9,12 +9,12 @@
 import Apollo
 import Foundation
 
-final public class HelloApolloClient {
+final public class ProjectApolloClient {
 
     //MARK:- Public variables
     
     /// Shared instance of app to access Apollo
-    static let shared = HelloApolloClient()
+    static let shared = ProjectApolloClient()
     
     /// Apollo instance to connect to GraphQL
     private(set) lazy var apollo: ApolloClient = {
@@ -22,7 +22,7 @@ final public class HelloApolloClient {
         let store = ApolloStore(cache: cache)
         let client = URLSessionClient()
         let provider = LegacyInterceptorProvider(client: client, store: store)
-        let url = URL(string: "http://192.168.33.250:15002/graphql")!
+        let url = URL(string: "http://127.0.0.1:15002/graphql")!
         
         let requestChainTransport = RequestChainNetworkTransport(interceptorProvider: provider,
                                                                  endpointURL: url)

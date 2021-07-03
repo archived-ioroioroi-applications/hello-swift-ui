@@ -6,11 +6,11 @@ import Foundation
 
 /// HelloGraphql namespace
 public enum HelloGraphql {
-  public final class SampleQueryQuery: GraphQLQuery {
+  public final class PoweupsQuery: GraphQLQuery {
     /// The raw GraphQL definition of this operation.
     public let operationDefinition: String =
       """
-      query SampleQuery {
+      query Poweups {
         allPowerups {
           __typename
           edges {
@@ -24,7 +24,7 @@ public enum HelloGraphql {
       }
       """
 
-    public let operationName: String = "SampleQuery"
+    public let operationName: String = "Poweups"
 
     public init() {
     }

@@ -15,7 +15,8 @@
 		728B8EF2265A97ED00CAFC8F /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B8EF1265A97ED00CAFC8F /* HelloWorldUITests.swift */; };
 		72A415C22663C582002585FF /* ContentView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A415C12663C582002585FF /* ContentView5.swift */; };
 		72A415C52663C687002585FF /* HelloGraphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A415C42663C687002585FF /* HelloGraphql.swift */; };
-		72A415C72663C920002585FF /* HelloApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A415C62663C920002585FF /* HelloApolloClient.swift */; };
+		72A415C72663C920002585FF /* ProjectApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A415C62663C920002585FF /* ProjectApolloClient.swift */; };
+		72A415C9266CFA80002585FF /* ContentView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A415C8266CFA80002585FF /* ContentView6.swift */; };
 		72FED381265CF69000694EDE /* HelloTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED380265CF69000694EDE /* HelloTabView.swift */; };
 		72FED383265CFB5F00694EDE /* ApiFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED382265CFB5F00694EDE /* ApiFetch.swift */; };
 		72FED385265CFCB700694EDE /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FED384265CFCB700694EDE /* ContentView2.swift */; };
@@ -64,7 +65,8 @@
 		728B8EF3265A97ED00CAFC8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A415C12663C582002585FF /* ContentView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView5.swift; sourceTree = "<group>"; };
 		72A415C42663C687002585FF /* HelloGraphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloGraphql.swift; sourceTree = "<group>"; };
-		72A415C62663C920002585FF /* HelloApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloApolloClient.swift; sourceTree = "<group>"; };
+		72A415C62663C920002585FF /* ProjectApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectApolloClient.swift; sourceTree = "<group>"; };
+		72A415C8266CFA80002585FF /* ContentView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView6.swift; sourceTree = "<group>"; };
 		72FED380265CF69000694EDE /* HelloTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloTabView.swift; sourceTree = "<group>"; };
 		72FED382265CFB5F00694EDE /* ApiFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFetch.swift; sourceTree = "<group>"; };
 		72FED384265CFCB700694EDE /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				72FED380265CF69000694EDE /* HelloTabView.swift */,
 				72FED38C265E8E7600694EDE /* ContentView4.swift */,
 				72A415C12663C582002585FF /* ContentView5.swift */,
+				72A415C8266CFA80002585FF /* ContentView6.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				72A415C42663C687002585FF /* HelloGraphql.swift */,
-				72A415C62663C920002585FF /* HelloApolloClient.swift */,
+				72A415C62663C920002585FF /* ProjectApolloClient.swift */,
 			);
 			path = Graphql;
 			sourceTree = "<group>";
@@ -475,11 +478,12 @@
 				728B8ED7265A97EB00CAFC8F /* ContentView.swift in Sources */,
 				72FED383265CFB5F00694EDE /* ApiFetch.swift in Sources */,
 				72FED38B265D40CB00694EDE /* ITunesApiModel.swift in Sources */,
+				72A415C9266CFA80002585FF /* ContentView6.swift in Sources */,
 				72FED389265D378400694EDE /* ContentView3.swift in Sources */,
 				728B8ED5265A97EB00CAFC8F /* HelloWorldApp.swift in Sources */,
 				72A415C22663C582002585FF /* ContentView5.swift in Sources */,
 				72FED390265E9BFC00694EDE /* Realm.swift in Sources */,
-				72A415C72663C920002585FF /* HelloApolloClient.swift in Sources */,
+				72A415C72663C920002585FF /* ProjectApolloClient.swift in Sources */,
 				72FED387265CFDA000694EDE /* D1v1bApiModel.swift in Sources */,
 				72A415C52663C687002585FF /* HelloGraphql.swift in Sources */,
 				72FED38D265E8E7600694EDE /* ContentView4.swift in Sources */,
@@ -645,6 +649,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloWorld/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -667,6 +673,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloWorld/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -15,8 +15,8 @@ struct ContentView5: View {
         }.onAppear(perform: loadData)           // データ読み込み処理
     }
     func loadData() {
-        let graphqlSampleQuery = HelloGraphql.SampleQueryQuery()
-        let graphqlClient: HelloApolloClient = HelloApolloClient.shared
+        let graphqlSampleQuery = HelloGraphql.PoweupsQuery()
+        let graphqlClient: ProjectApolloClient = ProjectApolloClient.shared
         graphqlClient.apollo.fetch(query: graphqlSampleQuery) { result in
             guard let data = try? result.get().data?.resultMap else {
                 // エラー時の処理
