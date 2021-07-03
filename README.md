@@ -34,3 +34,5 @@ $ docker-compose exec node apollo codegen:generate ./HelloWorld/Graphql/HelloGra
 * Xcodeで完結させる方法もあるらしい. <https://qiita.com/kazuooooo/items/06ad397dc93ebd4ede2a>
 
 * HTTPでなくWebSocketで繋ぐ例 : <https://github.com/Kaww/SpaceXplorer/blob/f765c949bf304748e84d08dd6b6dc5f650df45dd/SpaceXplorer/Sources/Apollo/Network.swift>
+
+* 参考: <https://blog.spacemarket.com/code/graphql-on-swift-by-apollo-ios/> <https://www.back4app.com/docs/ios/graphql/swift-graphql>
