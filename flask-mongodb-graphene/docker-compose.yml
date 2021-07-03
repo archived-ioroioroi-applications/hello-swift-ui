@@ -4,9 +4,6 @@ services:
     build: './PythonAPI'
     ports:
       - "15002:5002"
-    networks: #dev切り替え用
-      - my-network
-      - default
     volumes:
       - ./app:/app
     tty: true
@@ -23,9 +20,6 @@ services:
 
   mongo:
     image: mongo
-    networks: #dev切り替え用
-      - my-network
-      - default
     ports:
       - "27017:27017"
     environment:
@@ -39,9 +33,6 @@ services:
 
   dbgate:
     image: dbgate/dbgate
-    networks: #dev切り替え用
-      - my-network
-      - default
     ports:
       - 80:3000
     environment:
@@ -68,6 +59,3 @@ services:
       # PASSWORD_con2: TEST
       # PORT_con2: 5432
       # ENGINE_con2: postgres@dbgate-plugin-postgres
-networks:
-  my-network:
-    external: true
